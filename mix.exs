@@ -4,7 +4,7 @@ defmodule Airbrakex.Mixfile do
   def project do
     [
       app: :airbrakex,
-      version: "0.0.5",
+      version: "0.0.6",
       elixir: "~> 1.0",
       description: "Airbrake Elixir Notifier",
       package: package,
@@ -14,7 +14,7 @@ defmodule Airbrakex.Mixfile do
 
   def package do
     [
-      contributors: ["Michał Kalbarczyk"],
+      maintainers: ["Michał Kalbarczyk"],
       licenses: ["MIT"],
       links: %{github: "https://github.com/fazibear/airbrakex"}
    ]
@@ -28,8 +28,8 @@ defmodule Airbrakex.Mixfile do
 
   defp deps do
     [
-      {:httpoison, "~> 0.7"},
-      {:poison, "~> 1.5"}
+      {:httpoison, "~> 0.8"},
+      {:poison, "~> 2.0"}
     ]
   end
 end
